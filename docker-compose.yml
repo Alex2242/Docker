@@ -11,6 +11,14 @@ services:
     networks:
       - backend
 
+  nifi:
+    image: apache/nifi:1.5.0
+    container_name: nifi
+
+    networks: 
+      - backend
+      - middleware
+
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:6.2.2
     container_name: elasticsearch
