@@ -59,7 +59,7 @@ services:
     build: "feature_service"
     container_name: feature_service
     user: "node"
-    working_dir: /home/node/FeatureService
+    working_dir: /opt/feature_service
     environment:
       - NODE_ENV=production
     ## feature_service is port is published for dev purposes
